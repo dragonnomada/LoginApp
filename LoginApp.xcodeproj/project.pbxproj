@@ -13,6 +13,7 @@
 		EBEFCF622A1DF134000CA445 /* LoginApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBEFCF602A1DF134000CA445 /* LoginApp.xcdatamodeld */; };
 		EBEFCF652A1DFDEC000CA445 /* SignInMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEFCF642A1DFDEC000CA445 /* SignInMainViewController.swift */; };
 		EBEFCF672A1E052B000CA445 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEFCF662A1E052B000CA445 /* SignUpViewController.swift */; };
+		EBEFCF692A1E1842000CA445 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBEFCF682A1E1842000CA445 /* ApiKeys.plist */; };
 		EBF52D212A1DDB03000C0CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52D202A1DDB03000C0CFD /* AppDelegate.swift */; };
 		EBF52D232A1DDB03000C0CFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52D222A1DDB03000C0CFD /* SceneDelegate.swift */; };
 		EBF52D252A1DDB03000C0CFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52D242A1DDB03000C0CFD /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 		EBEFCF612A1DF134000CA445 /* LoginApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LoginApp.xcdatamodel; sourceTree = "<group>"; };
 		EBEFCF642A1DFDEC000CA445 /* SignInMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInMainViewController.swift; sourceTree = "<group>"; };
 		EBEFCF662A1E052B000CA445 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		EBEFCF682A1E1842000CA445 /* ApiKeys.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = ApiKeys.plist; sourceTree = "<group>"; };
 		EBF52D1D2A1DDB03000C0CFD /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF52D202A1DDB03000C0CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBF52D222A1DDB03000C0CFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,7 @@
 			children = (
 				EBEFCF602A1DF134000CA445 /* LoginApp.xcdatamodeld */,
 				EBEFCF5E2A1DF01C000CA445 /* UserModel.swift */,
+				EBEFCF682A1E1842000CA445 /* ApiKeys.plist */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EBF52D2D2A1DDB04000C0CFD /* LaunchScreen.storyboard in Resources */,
+				EBEFCF692A1E1842000CA445 /* ApiKeys.plist in Resources */,
 				EBF52D2A2A1DDB04000C0CFD /* Assets.xcassets in Resources */,
 				EBF52D282A1DDB03000C0CFD /* Main.storyboard in Resources */,
 			);

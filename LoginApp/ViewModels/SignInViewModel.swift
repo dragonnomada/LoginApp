@@ -43,6 +43,21 @@ class SignInViewModel {
     let userModel: UserModel
     var delegate: SignInDelegate?
     
+    lazy var apiKeys: NSDictionary = {
+        
+        guard let url = Bundle.main.url(forResource: "ApiKeys", withExtension: "plist")
+        else {
+            fatalError("Error to convert ApiKeys.plist path to url")
+        }
+        
+        guard let apiKeys = NSDictionary(contentsOf: url)
+        else {
+            fatalError("Error while reading ApiKeys.plist")
+        }
+                
+        return apiKeys
+    }()
+    
     init(userModel: UserModel) {
         self.userModel = userModel
     }
@@ -77,6 +92,8 @@ class SignInViewModel {
         }
         
         // TODO: Send email with password reset
+        print(apiKeys["mailslurp"] ?? "xx")
+        
         
         delegate?.forgotPassword(sender, user: user, error: nil)
     }
