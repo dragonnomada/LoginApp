@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EBEFCF592A1DE1EE000CA445 /* SecureTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEFCF582A1DE1EE000CA445 /* SecureTextField.swift */; };
+		EBEFCF5C2A1DE9D2000CA445 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEFCF5B2A1DE9D2000CA445 /* SignInViewModel.swift */; };
+		EBEFCF5F2A1DF01C000CA445 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEFCF5E2A1DF01C000CA445 /* UserModel.swift */; };
+		EBEFCF622A1DF134000CA445 /* LoginApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EBEFCF602A1DF134000CA445 /* LoginApp.xcdatamodeld */; };
+		EBEFCF652A1DFDEC000CA445 /* SignInMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEFCF642A1DFDEC000CA445 /* SignInMainViewController.swift */; };
+		EBEFCF672A1E052B000CA445 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEFCF662A1E052B000CA445 /* SignUpViewController.swift */; };
 		EBF52D212A1DDB03000C0CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52D202A1DDB03000C0CFD /* AppDelegate.swift */; };
 		EBF52D232A1DDB03000C0CFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52D222A1DDB03000C0CFD /* SceneDelegate.swift */; };
 		EBF52D252A1DDB03000C0CFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52D242A1DDB03000C0CFD /* ViewController.swift */; };
@@ -36,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EBEFCF582A1DE1EE000CA445 /* SecureTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecureTextField.swift; sourceTree = "<group>"; };
+		EBEFCF5B2A1DE9D2000CA445 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
+		EBEFCF5E2A1DF01C000CA445 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		EBEFCF612A1DF134000CA445 /* LoginApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LoginApp.xcdatamodel; sourceTree = "<group>"; };
+		EBEFCF642A1DFDEC000CA445 /* SignInMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInMainViewController.swift; sourceTree = "<group>"; };
+		EBEFCF662A1E052B000CA445 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		EBF52D1D2A1DDB03000C0CFD /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBF52D202A1DDB03000C0CFD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBF52D222A1DDB03000C0CFD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +88,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EBEFCF572A1DE1D8000CA445 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				EBEFCF582A1DE1EE000CA445 /* SecureTextField.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		EBEFCF5A2A1DE9A6000CA445 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EBEFCF5B2A1DE9D2000CA445 /* SignInViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EBEFCF5D2A1DEFF6000CA445 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EBEFCF602A1DF134000CA445 /* LoginApp.xcdatamodeld */,
+				EBEFCF5E2A1DF01C000CA445 /* UserModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EBEFCF632A1DFDB4000CA445 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EBEFCF572A1DE1D8000CA445 /* Helpers */,
+				EBEFCF642A1DFDEC000CA445 /* SignInMainViewController.swift */,
+				EBEFCF662A1E052B000CA445 /* SignUpViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		EBF52D142A1DDB03000C0CFD = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +146,9 @@
 		EBF52D1F2A1DDB03000C0CFD /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
+				EBEFCF5D2A1DEFF6000CA445 /* Models */,
+				EBEFCF5A2A1DE9A6000CA445 /* ViewModels */,
+				EBEFCF632A1DFDB4000CA445 /* Views */,
 				EBF52D202A1DDB03000C0CFD /* AppDelegate.swift */,
 				EBF52D222A1DDB03000C0CFD /* SceneDelegate.swift */,
 				EBF52D242A1DDB03000C0CFD /* ViewController.swift */,
@@ -258,9 +308,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBEFCF592A1DE1EE000CA445 /* SecureTextField.swift in Sources */,
 				EBF52D252A1DDB03000C0CFD /* ViewController.swift in Sources */,
 				EBF52D212A1DDB03000C0CFD /* AppDelegate.swift in Sources */,
 				EBF52D232A1DDB03000C0CFD /* SceneDelegate.swift in Sources */,
+				EBEFCF5F2A1DF01C000CA445 /* UserModel.swift in Sources */,
+				EBEFCF652A1DFDEC000CA445 /* SignInMainViewController.swift in Sources */,
+				EBEFCF672A1E052B000CA445 /* SignUpViewController.swift in Sources */,
+				EBEFCF622A1DF134000CA445 /* LoginApp.xcdatamodeld in Sources */,
+				EBEFCF5C2A1DE9D2000CA445 /* SignInViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,6 +652,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EBEFCF602A1DF134000CA445 /* LoginApp.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EBEFCF612A1DF134000CA445 /* LoginApp.xcdatamodel */,
+			);
+			currentVersion = EBEFCF612A1DF134000CA445 /* LoginApp.xcdatamodel */;
+			path = LoginApp.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EBF52D152A1DDB03000C0CFD /* Project object */;
 }

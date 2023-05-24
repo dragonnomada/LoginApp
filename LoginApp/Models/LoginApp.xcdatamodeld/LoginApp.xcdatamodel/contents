@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21754" systemVersion="22E261" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="UserEntity" representedClassName="UserEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="faceID" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="fullname" optional="YES" attributeType="String"/>
+        <attribute name="password" attributeType="String"/>
+        <attribute name="picture" optional="YES" attributeType="Binary"/>
+        <attribute name="remember" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="touchID" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="username" attributeType="String"/>
+    </entity>
+</model>
