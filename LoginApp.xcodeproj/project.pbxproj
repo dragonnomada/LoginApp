@@ -14,6 +14,7 @@
 		EBEFCF652A1DFDEC000CA445 /* SignInMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEFCF642A1DFDEC000CA445 /* SignInMainViewController.swift */; };
 		EBEFCF672A1E052B000CA445 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBEFCF662A1E052B000CA445 /* SignUpViewController.swift */; };
 		EBEFCF692A1E1842000CA445 /* ApiKeys.plist in Resources */ = {isa = PBXBuildFile; fileRef = EBEFCF682A1E1842000CA445 /* ApiKeys.plist */; };
+		EBEFCF6C2A1E1AF2000CA445 /* mailslurp in Frameworks */ = {isa = PBXBuildFile; productRef = EBEFCF6B2A1E1AF2000CA445 /* mailslurp */; };
 		EBF52D212A1DDB03000C0CFD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52D202A1DDB03000C0CFD /* AppDelegate.swift */; };
 		EBF52D232A1DDB03000C0CFD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52D222A1DDB03000C0CFD /* SceneDelegate.swift */; };
 		EBF52D252A1DDB03000C0CFD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBF52D242A1DDB03000C0CFD /* ViewController.swift */; };
@@ -70,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EBEFCF6C2A1E1AF2000CA445 /* mailslurp in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +198,9 @@
 			dependencies = (
 			);
 			name = LoginApp;
+			packageProductDependencies = (
+				EBEFCF6B2A1E1AF2000CA445 /* mailslurp */,
+			);
 			productName = LoginApp;
 			productReference = EBF52D1D2A1DDB03000C0CFD /* LoginApp.app */;
 			productType = "com.apple.product-type.application";
@@ -268,6 +273,9 @@
 				Base,
 			);
 			mainGroup = EBF52D142A1DDB03000C0CFD;
+			packageReferences = (
+				EBEFCF6A2A1E1AF2000CA445 /* XCRemoteSwiftPackageReference "mailslurp-client-swift" */,
+			);
 			productRefGroup = EBF52D1E2A1DDB03000C0CFD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -656,6 +664,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EBEFCF6A2A1E1AF2000CA445 /* XCRemoteSwiftPackageReference "mailslurp-client-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mailslurp/mailslurp-client-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EBEFCF6B2A1E1AF2000CA445 /* mailslurp */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EBEFCF6A2A1E1AF2000CA445 /* XCRemoteSwiftPackageReference "mailslurp-client-swift" */;
+			productName = mailslurp;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		EBEFCF602A1DF134000CA445 /* LoginApp.xcdatamodeld */ = {

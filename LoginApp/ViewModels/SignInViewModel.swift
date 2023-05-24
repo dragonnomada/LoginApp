@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import mailslurp
 
 enum SignInError: Error {
     case userNotExists(username: String)
@@ -92,7 +93,34 @@ class SignInViewModel {
         }
         
         // TODO: Send email with password reset
-        print(apiKeys["mailslurp"] ?? "xx")
+        if let apiKey = apiKeys["mailslurp"] as? String {
+            CommonActionsControllerAPI.sendEmailSimpleWithRequestBuilder(simpleSendEmailOptions: SimpleSendEmailOptions(to: email, body: "Your password is: \(user.password ?? "<error>")", subject: "LoginApp Password recovery"))
+                .addHeader(name: "x-api-key", value: apiKey)
+                .execute()
+                .done { [self] response in
+                    self.delegate?.forgotPassword(sender, user: user, error: nil)
+                 }
+                .catch(policy: .allErrors) { err in
+                    // handle error
+                    guard let e = err as? ErrorResponse else {
+                        let error = err.localizedDescription
+                        print(error)
+                        self.delegate?.forgotPassword(sender, user: user, error: .unknown(message: "\(error)"))
+                        return
+                    }
+                    // pattern match the error to access status code and data
+                    // MailSlurp returns 4xx errors when invalid parameters or
+                    // unsatisfiable request. See the message and status code
+                    switch e {
+                    case .error(let statusCode, let data, _, _):
+                        let msg = String(decoding: data!, as: UTF8.self)
+                        let error = "\(statusCode) Bad request: \(msg)"
+                        print(error)
+                        self.delegate?.forgotPassword(sender, user: user, error: .unknown(message: "\(error)"))
+                    }
+                  }
+            return
+        }
         
         
         delegate?.forgotPassword(sender, user: user, error: nil)

@@ -1,0 +1,32 @@
+{
+  "pins" : [
+    {
+      "identity" : "anycodable",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Flight-School/AnyCodable",
+      "state" : {
+        "revision" : "862808b2070cd908cb04f9aafe7de83d35f81b05",
+        "version" : "0.6.7"
+      }
+    },
+    {
+      "identity" : "mailslurp-client-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mailslurp/mailslurp-client-swift",
+      "state" : {
+        "revision" : "059dc8e02332a929ec7c56a8828e00d8c4309dc7",
+        "version" : "15.17.6"
+      }
+    },
+    {
+      "identity" : "promisekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/mxcl/PromiseKit",
+      "state" : {
+        "revision" : "8a98e31a47854d3180882c8068cc4d9381bf382d",
+        "version" : "6.22.1"
+      }
+    }
+  ],
+  "version" : 2
+}
